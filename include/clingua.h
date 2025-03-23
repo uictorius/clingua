@@ -13,7 +13,7 @@
 #define retornar     return
 #define se           if
 #define senao        else
-#define enquantopinto while(1)
+#define enquanto     while(1)
 #define para         for
 #define estrutura    struct
 #define enumeracao   enum
