@@ -5,38 +5,48 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <stdbool.h>
+#include <math.h>
 
-/* Palavras-chave principais */
-#define inteiro      int
-#define principal    main
-#define imprimir     printf
-#define retornar     return
-#define se           if
-#define senao        else
-#define enquanto     while(1)
-#define para         for
-#define estrutura    struct
-#define enumeracao   enum
+/* Definições de palavras-chave principais */
+#define inteiro        int
+#define principal      main
+#define imprimir       printf
+#define retornar       return
+#define se             if
+#define senao          else
+#define enquanto       while
+#define para           for
+#define estrutura      struct
+#define enumeracao     enum
+#define constante      const
+#define estatica       static
+#define registrar      register
+#define volatil        volatile
 
 /* Tipos de dados */
-#define caractere    char
-#define flutuante    float
-#define duplo        double
-#define vazio        void
+#define caractere      char
+#define flutuante      float
+#define duplo          double
+#define vazio          void
+#define booleano       bool
 
-/* Funções de I/O */
-#define ler(p)          scanf("%d", &p)
-#define ler_flutuante(p) scanf("%f", &p)
-#define ler_texto(p, t) scanf("%" #t "s", p)
-#define limpar_buffer   while(getchar() != '\n')
+/* Valores booleanos */
+#define VERDADEIRO     true
+#define FALSO          false
+
+/* Entrada e saída */
+#define ler(p)           scanf("%d", &(p))
 
 /* Utilitários */
-#define esperar(t)      sleep(t)
-#define tamanho_array(arr) sizeof(arr)/sizeof(arr[0])
+#define esperar(t)         sleep(t)
+
+/* Memória */
+#define alocar(tamanho)       malloc(tamanho)
+#define realocar(ptr, tamanho) realloc(ptr, tamanho)
+#define liberar(ptr)          free(ptr)
 
 /* Constantes */
-#define VERDADEIRO      1
-#define FALSO           0
 #define NULO            NULL
 
-#endif
+#endif /* CLINGUA_H */
