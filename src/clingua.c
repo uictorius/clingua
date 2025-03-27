@@ -7,7 +7,8 @@ inteiro principal() {
     inteiro idade;
     imprimir("Digite sua idade: ");
     ler(idade);
-    limpar_buffer;
+    enquanto(pegar_caractere() != '\n');
+
     
     // Controle de fluxo
     se (idade >= 18) {
