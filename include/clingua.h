@@ -36,7 +36,8 @@
 #define FALSO          false
 
 /* Entrada e saída */
-#define ler(p)           scanf("%d", &(p))
+#define ler(p)              scanf("%d", &(p))
+#define pegar_caractere()  getchar()
 
 /* Utilitários */
 #define esperar(t)         sleep(t)
