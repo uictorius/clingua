@@ -53,7 +53,7 @@ clingua/
     └── main.c     # Código fonte exemplo
 ```
 
-## Documentação da Biblioteca CLingua
+## 📄 Documentação da Biblioteca CLingua
 
 ### Definições de Palavras-chave Principais
 
